@@ -1,6 +1,20 @@
 {
-  "name": "api",
+  "name": "npsservice",
   "version": "1.0.0",
+  "description": "Serviço de calculo de Net Promoter Score",
+  "author": "William Willers",
+  "homepage": "https://github.com/Wwillers/nextlevelweek-04-nodejs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wwillers/nextlevelweek-04-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wwillers/nextlevelweek-04-nodejs/issues"
+  },
+  "engines": {
+    "yarn": ">=1.22.10",
+    "node": ">=14.16.0"
+  },
   "main": "server.ts",
   "license": "MIT",
   "scripts": {

@@ -3,7 +3,7 @@ import { getCustomRepository, Not, IsNull } from 'typeorm';
 import { SurveysUsersRepository } from '../repositories/SurveysUsersRepository';
 
 class NpsController {
-  async execute(req: Request, res: Response) {
+  async execute(req: Request, res: Response): Promise<Response> {
     const { survey_id } = req.params;
     const surveysUsersRepository = getCustomRepository(SurveysUsersRepository);
 

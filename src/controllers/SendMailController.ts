@@ -8,7 +8,7 @@ import { resolve } from 'path';
 import { AppError } from '../errors/AppError';
 
 class SendMailController {
-  async execute(req: Request, res: Response) {
+  async execute(req: Request, res: Response): Promise<Response> {
     const { email, survey_id } = req.body;
 
     const usersRepository = getCustomRepository(UsersRepository);

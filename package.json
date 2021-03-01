@@ -21,7 +21,7 @@
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
     "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
     "test": "NODE_ENV=test jest -i",
-    "lint": "eslint src",
+    "lint": "eslint . --ext .ts",
     "prettier": "prettier \"**/*.{js,md,json}\"",
     "prettier:check": "yarn run prettier -- --check",
     "prettier:fix": "yarn run prettier -- --write"

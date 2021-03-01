@@ -20,7 +20,12 @@ class SendMailService {
     });
   }
 
-  async execute(to: string, subject: string, variables: object, path: string) {
+  async execute(
+    to: string,
+    subject: string,
+    variables: Record<string, unknown>,
+    path: string
+  ) {
     const templateFileContent = fs.readFileSync(path).toString('utf-8');
     const mailTemplateParse = handlebars.compile(templateFileContent);
     const html = mailTemplateParse(variables);

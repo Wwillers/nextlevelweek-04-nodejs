@@ -24,11 +24,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-        - name: Install dependencies
-          run: yarn ci
-        - name: Run prettier check on project files
-          run: yarn run prettier:check
-        - name: Run linter
-          run: yarn run linter
-        - name: Run unit tests
-          run: yarn test
+      - name: Install dependencies
+        run: yarn ci
+      - name: Run prettier check on project files
+        run: yarn run prettier:check
+      - name: Run linter
+        run: yarn run linter
+      - name: Run unit tests
+        run: yarn test
